@@ -9,30 +9,32 @@ export function Header() {
   }
 
   return (
-    <div className="w-full flex justify-between items-center pt-8 px-12">
-      <p className="text-2xl tracking-wide">Antonio F. G. Gomes</p>
+    <div className="w-full flex justify-between items-center pt-8 px-12 xl:px-36 transition-all duration-500 ease-in-out">
+      <p className="text-xl md:text-2xl lg:text-3xl tracking-wide transition-all duration-500 ease-in-out">
+        Antonio F. G. Gomes
+      </p>
       <div className="gap-4 items-center hidden lg:flex">
         <button
           type="button"
-          className="hover:font-medium transition-all text-xl"
+          className="hover:font-medium  text-xl xl:text-2xl transition-all duration-500 ease-in-out"
         >
           About
         </button>
         <button
           type="button"
-          className="hover:font-medium transition-all text-xl"
+          className="hover:font-medium  text-xl xl:text-2xl transition-all duration-500 ease-in-out"
         >
           Experience
         </button>
         <button
           type="button"
-          className="hover:font-medium transition-all text-xl"
+          className="hover:font-medium  text-xl xl:text-2xl transition-all duration-500 ease-in-out"
         >
           Projects
         </button>
         <button
           type="button"
-          className="hover:font-medium transition-all text-xl"
+          className="hover:font-medium text-xl xl:text-2xl transition-all duration-500 ease-in-out"
         >
           Contact
         </button>
