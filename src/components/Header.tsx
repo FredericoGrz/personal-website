@@ -16,13 +16,14 @@ export function Header() {
       </p>
       <nav className="gap-4 items-center hidden lg:flex">
         {["About", "Experience", "Projects", "Contact"].map((item) => (
-          <button
+          <a
             key={item}
             type="button"
-            className="hover:font-medium text-xl xl:text-2xl transition-all duration-500 ease-in-out"
+            className="hover:font-medium cursor-pointer text-xl xl:text-2xl transition-all duration-150 ease-in-out"
+            href={`#${item.toLowerCase()}`}
           >
             {item}
-          </button>
+          </a>
         ))}
       </nav>
       <div className="relative lg:hidden">
@@ -40,14 +41,15 @@ export function Header() {
         {isMenuOpen && (
           <nav className="absolute right-0 mt-2 flex flex-col gap-2 w-40 bg-white shadow-md rounded-md p-2">
             {["About", "Experience", "Projects", "Contact"].map((item) => (
-              <button
+              <a
                 key={item}
                 type="button"
-                className="hover:font-medium transition-all text-lg"
+                className="hover:font-medium cursor-pointer transition-all text-lg"
                 onClick={closeMenu}
+                href={`#${item.toLowerCase()}`}
               >
                 {item}
-              </button>
+              </a>
             ))}
           </nav>
         )}
