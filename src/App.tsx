@@ -1,4 +1,5 @@
 import { About } from "./components/About";
+import { Experience } from "./components/Experience";
 import { Header } from "./components/Header";
 import { Primary } from "./components/Primary";
 import { Section } from "./components/Section";
@@ -11,6 +12,7 @@ function App() {
         <Primary />
       </Section>
       <About />
+      <Experience />
     </div>
   );
 }
