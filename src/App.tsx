@@ -1,4 +1,5 @@
 import { About } from "./components/About";
+import { Contact } from "./components/Contact";
 import { Experience } from "./components/Experience";
 import { Header } from "./components/Header";
 import { Primary } from "./components/Primary";
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Experience />
       <Projects />
+      <Contact />
     </div>
   );
 }
