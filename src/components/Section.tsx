@@ -8,7 +8,7 @@ type SectionProps = {
 
 export function Section({ id, children, className = "" }: SectionProps) {
   return (
-    <section id={id} className={`h-screen ${className}`}>
+    <section id={id} className={`min-h-screen ${className}`}>
       {children}
     </section>
   );
