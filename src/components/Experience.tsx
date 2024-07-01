@@ -32,6 +32,14 @@ export function Experience() {
       title: "React Native",
       level: "Basic",
     },
+    {
+      title: "TailwindCSS",
+      level: "Experienced",
+    },
+    {
+      title: "Styled-Components",
+      level: "Experienced",
+    },
   ];
 
   const backEndExperiences: Experiences[] = [
@@ -50,6 +58,22 @@ export function Experience() {
     {
       title: "Git",
       level: "Experienced",
+    },
+    {
+      title: "SQL",
+      level: "Intermediate",
+    },
+    {
+      title: "NoSQL",
+      level: "Basic",
+    },
+    {
+      title: "ORM",
+      level: "Intermediate",
+    },
+    {
+      title: "Jest",
+      level: "Intermediate",
     },
   ];
 
