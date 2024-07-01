@@ -18,7 +18,9 @@ export function CardAbout({ type, title, primary, secondary }: CardAboutProps) {
       )}
       <p className="font-medium text-lg">{title}</p>
       <p className="text-zinc-500">{primary}</p>
-      <p className="text-zinc-500">{secondary}</p>
+      <p className="text-zinc-500 text-sm sm:text-base transition-all duration-500 ease-in-out">
+        {secondary}
+      </p>
     </div>
   );
 }

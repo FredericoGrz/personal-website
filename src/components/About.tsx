@@ -25,7 +25,7 @@ export function About() {
         <div className="flex flex-col gap-5 px-2 md:px-8 transition-all duration-500 ease-in-out">
           <div
             id="cards"
-            className="flex justify-between gap-4 items-center min-w-[460px] w-full transition-all duration-500 ease-in-out"
+            className="flex justify-between gap-4 items-center w-full transition-all duration-500 ease-in-out"
           >
             <CardAbout
               type="Experience"
@@ -40,7 +40,7 @@ export function About() {
               secondary="B.Sc. Bachelors Degree"
             />
           </div>
-          <p className="text-zinc-500 text-justify px-1 text-sm xl:text-base xl:mt-7 transition-all duration-500 ease-in-out">
+          <p className="text-zinc-500 text-justify px-2 text-sm xl:text-base xl:mt-7 transition-all duration-500 ease-in-out">
             My name is Antonio Frederico Graziani Gomes, 29 years old. I was
             born in the United States and spent a significant part of my life in
             Brazil. In 2016, I graduated with a degree in Information Systems.

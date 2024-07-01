@@ -17,7 +17,7 @@ export function CardExperience({ title, skills }: CardExperienceProps) {
           skills.map((skill, index) => (
             <div
               key={index}
-              className="flex gap-2 w-1/2 pl-10 md:pl-28 lg:pl-8 xl:pl-20 2xl:pl-24 transition-all duration-500 ease-in-out"
+              className="flex gap-2 w-1/2 pl-8 sm:pl-28 lg:pl-8 xl:pl-20 2xl:pl-24 transition-all duration-500 ease-in-out"
             >
               <BsPatchCheckFill className="text-2xl" />
               <div>
