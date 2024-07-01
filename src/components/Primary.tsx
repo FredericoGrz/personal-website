@@ -22,12 +22,12 @@ export function Primary() {
             Frontend Developer
           </p>
         </div>
-        <button
-          type="button"
-          className="border-2 border-zinc-700 w-fit p-2 lg:text-lg rounded-xl hover:scale-110 transition-transform"
+        <a
+          className="border-2 cursor-pointer border-zinc-700 w-fit p-2 lg:text-lg rounded-xl hover:scale-110 transition-transform"
+          href="#contact"
         >
           Contact Info
-        </button>
+        </a>
         <div className="flex gap-2 items-center">
           <a
             className="w-fit hover:scale-105 transition-transform"
