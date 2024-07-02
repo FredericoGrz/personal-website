@@ -1,6 +1,7 @@
 import { CardProject } from "./CardProject";
 import { Section } from "./Section";
 import stockDashboard from "../assets/stockDashboard.png";
+import matchingGame from "../assets/matching-game.png";
 
 export function Projects() {
   const projects = [
@@ -9,6 +10,12 @@ export function Projects() {
       img: stockDashboard,
       githubUrl: "https://github.com/FredericoGrz/stock-dashboard",
       liveDemoUrl: "https://dulcet-tapioca-eca7a7.netlify.app",
+    },
+    {
+      title: "Matching Game",
+      img: matchingGame,
+      githubUrl: "https://github.com/FredericoGrz/MemoryGame",
+      liveDemoUrl: "https://aesthetic-pie-171530.netlify.app/",
     },
   ];
 
