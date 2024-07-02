@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { BsPatchCheckFill } from "react-icons/bs";
 
 type CardExperienceProps = {
@@ -9,6 +10,7 @@ type CardExperienceProps = {
 };
 
 export function CardExperience({ title, skills }: CardExperienceProps) {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col gap-6 p-4 lg:w-1/2 border border-zinc-500 rounded-xl items-center">
       <p className="font-bold text-zinc-500 text-xl">{title}</p>
@@ -22,7 +24,7 @@ export function CardExperience({ title, skills }: CardExperienceProps) {
               <BsPatchCheckFill className="text-2xl" />
               <div>
                 <p className="font-bold">{skill.title}</p>
-                <p className="text-zinc-500">{skill.level}</p>
+                <p className="text-zinc-500">{t(skill.level.toLowerCase())}</p>
               </div>
             </div>
           ))}

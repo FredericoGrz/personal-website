@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { CardExperience } from "./CardExperience";
 import { Section } from "./Section";
 
@@ -7,6 +8,8 @@ interface Experiences {
 }
 
 export function Experience() {
+  const { t } = useTranslation();
+
   const frontEndExperiences: Experiences[] = [
     {
       title: "HTML",
@@ -84,19 +87,19 @@ export function Experience() {
     >
       <div className="flex flex-col gap-3 items-center">
         <p className=" text-zinc-500 lg:text-xl transition-all duration-500 ease-in-out">
-          Explore My
+          {t("exploreMy")}
         </p>
         <p className="text-3xl lg:text-5xl font-bold transition-all duration-500 ease-in-out">
-          Experience
+          {t("experience")}
         </p>
       </div>
       <div id="cards" className="flex flex-col gap-6 px-4 lg:flex-row">
         <CardExperience
-          title="Frontend Development"
+          title={t("frontendDevelopment")}
           skills={frontEndExperiences}
         />
         <CardExperience
-          title="Backend Development & Soft Skills"
+          title={t("backendSoftSkills")}
           skills={backEndExperiences}
         />
       </div>

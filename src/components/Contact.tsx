@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
 export function Contact() {
+  const { t } = useTranslation();
   return (
     <section
       id="contact"
@@ -9,10 +11,10 @@ export function Contact() {
     >
       <div className="flex flex-col gap-3 items-center">
         <p className=" text-zinc-500 lg:text-xl transition-all duration-500 ease-in-out">
-          Get in Touch
+          {t("getInTouch")}
         </p>
         <p className="text-3xl lg:text-5xl font-bold transition-all duration-500 ease-in-out">
-          Contact Me
+          {t("contactMe")}
         </p>
       </div>
       <div className="p-4 lg:p-8  flex gap-5 items-center border border-zinc-400 shadow-lg rounded-xl transition-all duration-500 ease-in-out">
@@ -41,25 +43,25 @@ export function Contact() {
             href="#about"
             className="text-lg lg:text-2xl hover:text-zinc-600 hover:border-b-2 pb-2 transition-all duration-500 ease-in-out"
           >
-            About
+            {t("about")}
           </a>
           <a
             href="#experience"
             className="text-lg lg:text-2xl hover:text-zinc-600 hover:border-b-2 pb-2 transition-all duration-500 ease-in-out"
           >
-            Experience
+            {t("experience")}
           </a>
           <a
             href="#projects"
             className="text-lg lg:text-2xl hover:text-zinc-600 hover:border-b-2 pb-2 transition-all duration-500 ease-in-out"
           >
-            Projects
+            {t("projects")}
           </a>
           <a
             href="#contact"
             className="text-lg lg:text-2xl hover:text-zinc-600 hover:border-b-2 pb-2 transition-all duration-500 ease-in-out"
           >
-            Contact
+            {t("contact")}
           </a>
         </nav>
         <p className="text-sm lg:text-base text-zinc-500 transition-all duration-500 ease-in-out">

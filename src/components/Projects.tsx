@@ -2,8 +2,11 @@ import { CardProject } from "./CardProject";
 import { Section } from "./Section";
 import stockDashboard from "../assets/stockDashboard.png";
 import matchingGame from "../assets/matching-game.png";
+import { useTranslation } from "react-i18next";
 
 export function Projects() {
+  const { t } = useTranslation();
+
   const projects = [
     {
       title: "Stock Dashboard",
@@ -27,10 +30,10 @@ export function Projects() {
     >
       <div className="flex flex-col gap-3 items-center">
         <p className="text-zinc-500 lg:text-xl transition-all duration-500 ease-in-out">
-          Browse My Recent
+          {t("browseMyRecent")}
         </p>
         <p className="text-3xl lg:text-5xl font-bold transition-all duration-500 ease-in-out">
-          Projects
+          {t("recentProjects")}
         </p>
       </div>
       <div

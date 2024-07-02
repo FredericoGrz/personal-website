@@ -1,6 +1,9 @@
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 export function Primary() {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col gap-4 w-full items-center pt-20 lg:flex-row lg:justify-center lg:gap-20 lg:pt-44">
       <div>
@@ -13,20 +16,20 @@ export function Primary() {
       <div className="flex flex-col gap-4 lg:gap-6 items-center tracking-wider">
         <div className="flex flex-col gap-2 text-center">
           <p className="text-lg lg:text-xl text-zinc-500 transition-all duration-500 ease-in-out">
-            Hello, I'm
+            {t("greeting")}
           </p>
           <p className="text-3xl lg:text-4xl font-bold transition-all duration-500 ease-in-out">
             Antonio Gomes
           </p>
           <p className="text-xl lg:text-2xl text-zinc-500 font-bold transition-all duration-500 ease-in-out">
-            Frontend Developer
+            {t("frontendDev")}
           </p>
         </div>
         <a
           className="border-2 cursor-pointer border-zinc-700 w-fit p-2 lg:text-lg rounded-xl hover:scale-110 transition-transform"
           href="#contact"
         >
-          Contact Info
+          {t("contactInfo")}
         </a>
         <div className="flex gap-2 items-center">
           <a
