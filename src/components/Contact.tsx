@@ -17,12 +17,12 @@ export function Contact() {
           {t("contactMe")}
         </p>
       </div>
-      <div className="p-4 lg:p-8  flex gap-5 items-center border border-zinc-400 shadow-lg rounded-xl transition-all duration-500 ease-in-out">
+      <div className="p-2 sm:p-4 lg:p-8 flex gap-2 sm:gap-5 items-center border border-zinc-400 shadow-lg rounded-xl transition-all duration-500 ease-in-out">
         <div className="flex gap-2 items-center hover:shadow-2xl hover:scale-110 transition-all ease-in-out">
           <IoMdMail className="lg:text-3xl transition-all duration-500 ease-in-out" />
           <a
             href="mailto:frederico.graz@gmail.com"
-            className="lg:text-2xl hover:font-medium transition-all ease-in-out"
+            className="text-sm lg:text-2xl hover:font-medium transition-all ease-in-out"
           >
             frederico.graz@gmail.com
           </a>
@@ -31,7 +31,7 @@ export function Contact() {
           <FaLinkedin className="lg:text-3xl transition-all duration-500 ease-in-out" />
           <a
             href="https://www.linkedin.com/in/antoniofggomes/"
-            className="lg:text-2xl hover:font-medium transition-all ease-in-out"
+            className="text-sm lg:text-2xl hover:font-medium transition-all ease-in-out"
           >
             LinkedIn
           </a>
