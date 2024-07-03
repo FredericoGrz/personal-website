@@ -2,9 +2,10 @@ import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineClose } from "react-icons/md";
 import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function closeMenu() {
@@ -12,7 +13,7 @@ export function Header() {
   }
 
   return (
-    <header className="w-full flex justify-between items-center pt-8 px-12 xl:px-36 transition-all duration-500 ease-in-out">
+    <header className="w-full flex justify-between items-center pt-8 px-5 sm:px-12 xl:px-36 transition-all duration-500 ease-in-out">
       <p className="text-xl md:text-2xl lg:text-3xl tracking-wide transition-all duration-500 ease-in-out">
         Antonio F. G. Gomes
       </p>
@@ -28,28 +29,11 @@ export function Header() {
             {t(item)}
           </a>
         ))}
+        <LanguageSwitcher className="ml-5 lg:ml-10" />
       </nav>
-      <div>
-        <button
-          type="button"
-          className={`p-2 rounded-lg hover:bg-green-300 hover:scale-110 transition-transform ${
-            i18n.language === "pt" && "bg-green-400 shadow-lg"
-          }`}
-          onClick={() => i18n.changeLanguage("pt")}
-        >
-          BR
-        </button>
-        <button
-          type="button"
-          className={`p-2 rounded-lg hover:bg-red-100 hover:scale-110 transition-transform ${
-            i18n.language === "en" && "bg-red-200 shadow-lg"
-          }`}
-          onClick={() => i18n.changeLanguage("en")}
-        >
-          US
-        </button>
-      </div>
-      <div className="relative lg:hidden">
+
+      <div className="relative lg:hidden flex gap-0.5 sm:gap-4 items-center">
+        <LanguageSwitcher />
         <button
           type="button"
           className="w-fit h-fit"
